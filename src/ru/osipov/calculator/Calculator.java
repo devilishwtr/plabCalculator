@@ -1,10 +1,8 @@
 package ru.osipov.calculator;
 
-import java.math.BigDecimal;
 
 public class Calculator {
     private final Display display;
-    private String opearator;
 
     public Calculator (Display display) {
         this.display = display;
@@ -74,19 +72,14 @@ public class Calculator {
         return number;
     }
 
-    void clearDisplay (Controller controller) {
+    public void clearDisplay (Controller controller) {
         controller.setDisplayText1 ("0");
         controller.setDisplayText2 ("0");
         controller.setDisplayText3 ("0");
     }
 
-//    public void operator(String opearator){
-//        this.opearator = opearator;
-//        String leftOp = display.setDisplayText1 (display.getDisplayText1 ());
-//        String rightOp = display.setDisplayText2 (display.getDisplayText2 ());
-//    }
 
-    public void enter () {
+   public void enter () {
         try {
             Double leftOp = Double.valueOf (display.setDisplayText1 (display.getDisplayText1 ()));
             Double rightOp = Double.valueOf (display.setDisplayText2 (display.getDisplayText2 ()));
