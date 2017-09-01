@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.fxml.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="713.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.osipov.calculator.Controller">
+    <children>
+        <Button fx:id="button1" layoutX="269.0" layoutY="175.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="1">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button2" layoutX="321.0" layoutY="175.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="2">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button3" layoutX="373.0" layoutY="175.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="3" AnchorPane.leftAnchor="373.0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button4" layoutX="269.0" layoutY="122.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="4">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button5" layoutX="321.0" layoutY="122.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="5">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button6" layoutX="373.0" layoutY="122.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="6" AnchorPane.leftAnchor="373.0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button7" layoutX="269.0" layoutY="70.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="7">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button8" layoutX="321.0" layoutY="70.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="8">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button9" graphicTextGap="10.0" layoutX="373.0" layoutY="70.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" stylesheets="@main.css" text="9" textOverrun="CLIP" AnchorPane.leftAnchor="373.0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="buttonEnter" layoutX="426.0" layoutY="70.0" mnemonicParsing="false" onAction="#setOnThirdDisplay" prefHeight="45.0" prefWidth="45.0" text="=" AnchorPane.leftAnchor="426.0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="button0" layoutX="269.0" layoutY="228.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+        <Button fx:id="buttonDot" layoutX="321.0" layoutY="228.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text=".">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <TextField fx:id="displayField1" alignment="BOTTOM_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="35.0" prefWidth="139.0" styleClass="display" text="0">
+         <font>
+            <Font name="Lucida Console" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="displayField2" alignment="BOTTOM_LEFT" layoutX="287.0" layoutY="14.0" prefHeight="35.0" prefWidth="139.0" styleClass="display" text="0">
+         <font>
+            <Font name="Lucida Console" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+        <TextField fx:id="displayField3" alignment="BOTTOM_LEFT" editable="false" layoutX="452.0" layoutY="14.0" prefHeight="35.0" prefWidth="203.0" styleClass="display" text="0" AnchorPane.rightAnchor="38.0">
+            <font>
+                <Font name="Lucida Console" size="16.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </TextField>
+      <Button layoutX="17.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonClearClick" prefHeight="45.0" prefWidth="180.0" text="C" AnchorPane.rightAnchor="516.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="249.0" layoutY="14.0" mnemonicParsing="false" onAction="#inputOnSecondDisplay" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #cccccc;;" styleClass="background" text="&gt;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="156.0" layoutY="14.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #cccccc;;" styleClass="background" text="&lt;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="506.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Нажмите &quot;&lt;&quot; чтобы выбрать область ввода для делимого числа." wrappingWidth="147.13671875">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="506.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Нажмите &quot;&gt;&quot; чтобы выбрать область ввода для делителя." wrappingWidth="147.13671875">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="506.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Нажмите &quot;=&quot; для вывода решения." wrappingWidth="147.13671875">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonPlusMinus" layoutX="373.0" layoutY="228.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="±">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Button>
+    </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

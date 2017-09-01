@@ -1,0 +1,9 @@
+.background {
+    -fx-background-color: whitesmoke;
+}
+.button {
+    -fx-background-color: lightslategrey;
+}
+.display {
+    -fx-background-color: #cccccc;
+}
