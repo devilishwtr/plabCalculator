@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.fxml.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="713.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.osipov.calculator.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="718.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.osipov.calculator.Controller">
     <children>
         <Button fx:id="button1" layoutX="269.0" layoutY="175.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="45.0" prefWidth="45.0" text="1">
          <font>
@@ -131,31 +131,31 @@
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor></Button>
-      <TextField fx:id="displayField1" alignment="BOTTOM_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="35.0" prefWidth="139.0" styleClass="display" text="0">
+      <TextField fx:id="displayField1" alignment="BOTTOM_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="35.0" prefWidth="173.0" styleClass="display" text="0">
          <font>
-            <Font name="Lucida Console" size="16.0" />
+            <Font name="Lucida Console" size="14.0" />
          </font>
          <effect>
             <DropShadow />
          </effect>
       </TextField>
-      <TextField fx:id="displayField2" alignment="BOTTOM_LEFT" layoutX="287.0" layoutY="14.0" prefHeight="35.0" prefWidth="139.0" styleClass="display" text="0">
+      <TextField fx:id="displayField2" alignment="BOTTOM_LEFT" layoutX="287.0" layoutY="14.0" prefHeight="35.0" prefWidth="167.0" styleClass="display" text="0">
          <font>
-            <Font name="Lucida Console" size="16.0" />
+            <Font name="Lucida Console" size="14.0" />
          </font>
          <effect>
             <DropShadow />
          </effect>
       </TextField>
-        <TextField fx:id="displayField3" alignment="BOTTOM_LEFT" editable="false" layoutX="452.0" layoutY="14.0" prefHeight="35.0" prefWidth="203.0" styleClass="display" text="0" AnchorPane.rightAnchor="38.0">
+        <TextField fx:id="displayField3" alignment="BOTTOM_LEFT" editable="false" layoutX="452.0" layoutY="14.0" prefHeight="35.0" prefWidth="233.0" styleClass="display" text="0" AnchorPane.rightAnchor="8.0">
             <font>
-                <Font name="Lucida Console" size="16.0" />
+                <Font name="Lucida Console" size="14.0" />
             </font>
          <effect>
             <DropShadow />
          </effect>
         </TextField>
-      <Button layoutX="17.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonClearClick" prefHeight="45.0" prefWidth="180.0" text="C" AnchorPane.rightAnchor="516.0">
+      <Button layoutX="6.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonClearClick" prefHeight="45.0" prefWidth="180.0" text="C" AnchorPane.rightAnchor="532.0">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
@@ -174,7 +174,7 @@
             <Font name="Lucida Console" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="156.0" layoutY="14.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #cccccc;;" styleClass="background" text="&lt;">
+      <Button layoutX="186.0" layoutY="14.0" mnemonicParsing="false" onAction="#inputOnFirstDisplay" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #cccccc;;" styleClass="background" text="&lt;">
          <effect>
             <DropShadow />
          </effect>

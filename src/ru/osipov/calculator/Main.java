@@ -16,8 +16,8 @@ public final class Main extends Application {
         stage.setTitle("Calculator");
         stage.setOnCloseRequest(x -> Platform.exit());
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("resourses/main.fxml"))));
-
-        stage.show();
+        stage.setResizable (false);
+        stage.show ();
     }
 
     public static void main(String[] args) {

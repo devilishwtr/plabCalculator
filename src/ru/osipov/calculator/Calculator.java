@@ -94,7 +94,7 @@ public class Calculator {
             System.out.println (leftOp / rightOp);
             display.setDisplayText3 (String.valueOf (decision));
             if (!display.getDisplayText1 ().equals ("0") && display.getDisplayText2 ().equals ("0")){
-                display.setDisplayText3 ("Нельзя делить на 0");}
+                display.setDisplayText3 ("Нельзя разделить на 0");}
             if (display.getDisplayText1 ().equals ("0") && display.getDisplayText2 ().equals ("0")) {
                 display.setDisplayText3 ("Вы ничего не ввели");
             }
